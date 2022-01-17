@@ -1,5 +1,5 @@
 # It's All in the Head: Representation Knowledge Distillation through Classifier Sharing
-<br> [Paper](https://arxiv.org/abs/2110.10955) |
+<br> [Paper](https://arxiv.org/abs/2110.10955)
 
 
 > Emanuel Ben-Baruch*, Matan Karklinsky, Yossi Biton, Avi Ben-Cohen, Hussam Lawen, Nadav Zamir<br/> DAMO Academy, Alibaba
@@ -14,6 +14,7 @@ Specifically, we first show that connecting the teacher's classifier to the stud
 Then, we propose an alternative approach that asks to tailor the teacher model to a student with limited capacity. This approach competes with and in some cases surpasses the first method.
 Via extensive experiments and analysis, we show the effectiveness of the proposed methods on various datasets and tasks, including image classification, fine-grained classification, and face verification. 
 For example, we achieve state-of-the-art performance for face verification on the IJB-C dataset for a MobileFaceNet model: TAR@(FAR=1e-5)=93.7\%. Code will be made available.
+
 
 
 
