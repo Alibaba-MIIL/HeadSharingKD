@@ -31,16 +31,16 @@ For example, we achieve state-of-the-art performance for face verification on th
 We provide the training code for CIFAR-100, based on the CRD repository ([link](https://github.com/HobbitLong/RepDistiller)). 
 
 ### Training with TH-KD
-An example of training the TH-KD scheme with regular KD loss: 
+An example of using the TH-KD scheme with regular KD loss: 
 ```
 python train_student.py --path_t /saved_models/resnet32x4_vanilla/ckpt_epoch_240.pth --distill kdth --model_s resnet8x4 -r 1 -a 1.5 -b 0.02 --trial 1
 ```
 
-An example of training the TH-KD scheme with the CRD loss:
+An example of using the TH-KD scheme with the CRD loss:
 ```
 python train_student.py --path_t /saved_models/resnet32x4_vanilla/ckpt_epoch_240.pth --distill crdth --model_s resnet8x4 -r 0.9 -a 1 -b 0.8 -d 0.02 --trial 1
 ```
-The teacher model can be download [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/ckpt_epoch_240.pth).
+The teacher model can be downloaded [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/ckpt_epoch_240.pth).
 
 &nbsp;
 
@@ -49,13 +49,13 @@ First, train the teacher with the student's classifier:
 ```
 python train_teacher.py --model resnet32x4 --path_th /saved_models/resnet8x4_student.pth
 ```
-The student model used can be download from [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/resnet8x4_student.pth)
+A student model can be downloaded from [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/resnet8x4_student.pth).
 
 Next, train the student using the obtained teacher:
 ```
 python train_student.py --path_t /saved_models/resnet32x4_SHKD.pth --distill crd --model_s resnet8x4 -r 1 -a 1.0 -b 0.8 --trial 1
 ```
-You can find a teacher trained using the SH_KD approach [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/resnet32x4_SHKD.pth)
+You can find a teacher, trained using the SH_KD approach [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/resnet32x4_SHKD.pth).
 
 &nbsp;
 
