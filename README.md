@@ -28,7 +28,7 @@ For example, we achieve state-of-the-art performance for face verification on th
 &nbsp;
 
 # Training
-We provide the training code on CIFAR-100, based on the CRD repository ([link](https://github.com/HobbitLong/RepDistiller)). 
+We provide the training code for CIFAR-100, based on the CRD repository ([link](https://github.com/HobbitLong/RepDistiller)). 
 
 ### Training with TH-KD
 An example of training the TH-KD scheme with regular KD loss: 
