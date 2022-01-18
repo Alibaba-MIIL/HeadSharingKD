@@ -2,7 +2,7 @@
 <br> [Paper](https://arxiv.org/abs/2110.10955)
 
 
-> Emanuel Ben-Baruch*, Matan Karklinsky, Yossi Biton, Avi Ben-Cohen, Hussam Lawen, Nadav Zamir<br/> DAMO Academy, Alibaba
+> Emanuel Ben-Baruch, Matan Karklinsky, Yossi Biton, Avi Ben-Cohen, Hussam Lawen, Nadav Zamir<br/> DAMO Academy, Alibaba
 > Group
 
 **Abstract**
