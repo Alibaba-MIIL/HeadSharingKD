@@ -1,5 +1,5 @@
 # It's All in the Head: Representation Knowledge Distillation through Classifier Sharing
-<br> [Paper](https://arxiv.org/abs/2110.10955)
+<br> [Paper](https://arxiv.org/...)
 
 
 > Emanuel Ben-Baruch, Matan Karklinsky, Yossi Biton, Avi Ben-Cohen, Hussam Lawen, Nadav Zamir<br/> DAMO Academy, Alibaba
