@@ -28,7 +28,7 @@ For example, we achieve state-of-the-art performance for face verification on th
 &nbsp;
 
 # Training
-We provide the training code for CIFAR-100, based on the CRD repository ([link](https://github.com/HobbitLong/RepDistiller)). 
+We provide the training code for CIFAR-100, extending the RepDistiller repo [CRD] ([link](https://github.com/HobbitLong/RepDistiller)). 
 
 ### Training with TH-KD
 An example of using the TH-KD scheme with regular KD loss: 
@@ -55,10 +55,10 @@ Next, train the student using the obtained teacher:
 ```
 python train_student.py --path_t /saved_models/resnet32x4_SHKD.pth --distill crd --model_s resnet8x4 -r 1 -a 1.0 -b 0.8 --trial 1
 ```
-You can find a teacher trained using the SH_KD approach [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/resnet32x4_SHKD.pth).
+You can find a teacher trained using the SH-KD approach [here](https://miil-public-eu.oss-eu-central-1.aliyuncs.com/model-zoo/HeadSharingKD/resnet32x4_SHKD.pth).
 
 &nbsp;
 
 
 ## Acknowledgement
-Thanks to the authors of the RepDistiller repo ([link](https://github.com/HobbitLong/RepDistiller)). This code is heavily rely on their great work.
+We thank the authors of the RepDistiller repo ([link](https://github.com/HobbitLong/RepDistiller)). This code is based on their great work.
