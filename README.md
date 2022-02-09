@@ -1,4 +1,7 @@
 # It's All in the Head: Representation Knowledge Distillation through Classifier Sharing
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/it-s-all-in-the-head-representation-knowledge/face-verification-on-ijb-c)](https://paperswithcode.com/sota/face-verification-on-ijb-c?p=it-s-all-in-the-head-representation-knowledge)
+
 <br> [Paper](https://arxiv.org/abs/2201.06945)
 
 
